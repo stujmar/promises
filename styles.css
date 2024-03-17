@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f0c7;
+    font-family: "Sen", sans-serif;
+}
+
+.title {
+    display: block;
+    margin: 15px auto 0;
+    width: max-content;
+    font-size: 24px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    color: #333;
+    height: 30px;
+}
+
+
+.legal-pad {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.main {
+    display: flex;
+    padding-top: 18px;
+}
+
+.blank-line {
+    height: 28px;
+    width: 100%;
+}
+
+.gutter {
+    height: 100%;
+    width: 48px;
+}
+
+.content-text {
+    line-height: 28px;
+}
+
+.content-text:focus {
+    outline: none;
+}
+
+section {
+    display: flex;
+    height: 252px;
+}
+
+.content-postit {
+    position: relative;
+    overflow: hidden;
+    margin-left: 50px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    resize: none;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+}
+
+.postit-blue {
+    background-color: #66b3fa;
+}
+
+.postit-pink {
+    background-color: #f9c0c0;
+}
+
+.postit-green {
+    background-color: #b3f9c0;
+}
+
+.corner {
+    position: absolute;
+    bottom: -20px;
+    right: -50px;
+    transform: rotate(135deg);
+    width: 100px;
+    height: 60px;
+    background: linear-gradient(0deg, rgba(70, 5, 5, 0.09) 0%, rgba(255, 255, 255, 0) 45%);
+
+}
+
+.corner-two {
+    position: absolute;
+    bottom: 20px;
+    right: -18px;
+    transform: rotate(-45deg);
+    width: 130px;
+    height: 60px;
+    background: linear-gradient(0deg, rgba(70, 5, 5, 0.04) 0%, rgba(255, 255, 255, 0) 45%);
+
+}
